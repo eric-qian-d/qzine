@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Macondo');
+
+
+
+.nav-item{
+	color: white;
+  background-color: #A52A2A;
+
+}
+
+a:hover{
+	text-decoration: none !important;
+	color: #f8f9fa !important;
+	background-color: rgba(180,180,180,0.2);
+
+}
+
+.navbar{
+	background-color: transparent !important;
+	border-color: rgba(0,0,0,0);
+
+}

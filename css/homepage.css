@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Macondo');
+
+/* styling for a body tag, applies to everything inside the body of the page */
+
+#navbar-qzine {
+	background-color: rgba(255, 255, 255, 0.6); 
+	color: #A52A2A;
+	font-family: Merriweather, serif;
+}
+.nav-item{
+	color: white;
+
+}
+
+a:hover{
+	text-decoration: none !important;
+	color: #f8f9fa !important;
+	background-color: rgba(180,180,180,0.2);
+
+}
+
+.navbar{
+	background-color: transparent !important;
+	border-color: rgba(0,0,0,0);
+
+}
+
+#home-text{
+	font-size: 90px;
+  font-family: 'Macondo', cursive;
+	color: white;
+	text-align: center;
+}
+
+#home-body{
+	background-image: url('../images/home.jpg');
+	position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.text-center{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+
+}
+
+.fa-instagram {
+    background: #55ACEE;
+    color: white;
+}
