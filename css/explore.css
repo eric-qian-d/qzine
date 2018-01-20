@@ -2,7 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Macondo');
 
+#navbar-qzine {
+	background-color: rgba(255, 255, 255, 0.6); 
+	color: #A52A2A;
+	font-family: Merriweather, serif;
 
+}
 
 .nav-item{
 	color: white;
@@ -20,5 +25,5 @@ a:hover{
 .navbar{
 	background-color: transparent !important;
 	border-color: rgba(0,0,0,0);
-
+	display: block;
 }

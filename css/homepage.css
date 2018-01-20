@@ -4,6 +4,10 @@
 
 /* styling for a body tag, applies to everything inside the body of the page */
 
+body {
+  overflow: hidden;
+}
+
 #navbar-qzine {
 	background-color: rgba(255, 255, 255, 0.6); 
 	color: #A52A2A;
@@ -27,11 +31,15 @@ a:hover{
 
 }
 
-#home-text{
-	font-size: 90px;
-  font-family: 'Macondo', cursive;
-	color: white;
+#home-col{
+
 	text-align: center;
+}
+
+#home-text{
+  font-size: 90px !important; 
+  font-family: 'Macondo', cursive !important; 
+  color: white !important;
 }
 
 #home-body{
@@ -56,11 +64,11 @@ a:hover{
 
 
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
+    padding: 20px !important;
+    font-size: 30px !important;
+    width: 50px !important;
+    text-align: center !important;
+    text-decoration: none !important;
 
 }
 

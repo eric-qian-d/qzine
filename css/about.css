@@ -1,7 +1,7 @@
 .nav-item{
-	color: white;
+	color: black;
 	float: right;
-	background-color: #A52A2A;
+	background-color: white;
 }
 
 a:hover{
@@ -13,7 +13,9 @@ a:hover{
 
 .navbar{
 	background-color: white;
-	border-color: rgba(0,0,0,0);
+	border-color: rgba(160,160,160,0.3);
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
 
 }
 

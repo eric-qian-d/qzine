@@ -8,30 +8,33 @@
   </head>
   <body>
 
-    <nav class = "navbar navbar-expand-sm" style = 'padding: 0;' >
-      <div class = 'container-fluid'>
+    <nav class = "navbar navbar-expand-sm" style = 'padding: 0; position: fixed; width: 100%;' >
+      <div class = 'container-fluid' style = 'padding: 0;'>
         <div id = 'navbar-qzine'><bold>Qzine</bold></div>
         <div class = 'navbar-nav'>
-          <a class = 'nav-item nav-link' href = 'file:///Users/Emily/Desktop/Qzine/pages/home.html' >Home</a>
-          <a class = 'nav-item nav-link' href = 'file:///Users/Emily/Desktop/Qzine/pages/explore.html' >Explore Recipes</a>
-          <a class = 'nav-item nav-link' href = "file:///Users/Emily/Desktop/Qzine/pages/about.html" >About</a>
-          <a class = 'nav-item nav-link' href = "#/about" >Sign In</a>
+          <a class = 'nav-item nav-link' href = './home.html' >Home</a>
+          <a class = 'nav-item nav-link' href = './explore.html' >Explore Recipes</a>
+          <a class = 'nav-item nav-link' href = "./about.html" >About</a>
+          <a class = 'nav-item nav-link' href = "#/sign" >Sign In</a>
         </div>
       </div>
     </nav>
 
     <container class = 'container-fluid' id = 'home-body' style = 'padding: 0; '>
-			<div class = 'row' style = 'justify-content: center; height: 100vh;'>
+			<div class = 'row' style = 'justify-content: center; height: 100vh; '>
         <div class="text-center">
-				<section class = 'col-12 mx-auto text-center ' id = 'home-text' style="padding-top: 40px;">
-          <div>
-            <em><strong>Welcome to Qzine</strong></em>
+				<section class = 'col-12 mx-auto text-center ' id = 'home-col' style="padding-top: 0px; color: white; font-family: 'Macondo', cursive; font-size: 90px;">
+          <div>            
+            <br>
+            <br>
+            <div id = 'homebody'> <em><strong>Welcome to Qzine</strong></em>
+
+            <br>
+            <a href="http://instagram.com/q_zine" class="fa fa-instagram"></a>
+            <a href="http://www.facebook.com/emilyxie8" class="fa fa-facebook"></a>          
           </div>
         </section>
-        <div class="social-media" style = 'align-items: center;'>
-          <a href="http://instagram.com/q_zine" class="fa fa-instagram"></a>
-          <a href="http://www.facebook.com/emilyxie8" class="fa fa-facebook"></a>
-        </div>
+
       </div>
 			</div>
 		</container>
@@ -41,3 +44,19 @@
 
   </body>
 </html>
+
+<!--     <container class = 'container-fluid' id = 'home-body' style = 'padding: 0; '>
+      <div class = 'row' style = 'justify-content: center; height: 100vh;'>
+        <div class="text-center">
+        <section class = 'col-12 mx-auto text-center ' id = 'home-text' style="padding-top: 40px;">
+          <div>
+            <em><strong>Welcome to Qzine</strong></em>
+          </div>
+        </section>
+        <div class="social-media" style = 'align-items: top;'>
+          <a href="http://instagram.com/q_zine" class="fa fa-instagram"></a>
+          <a href="http://www.facebook.com/emilyxie8" class="fa fa-facebook"></a>
+        </div>
+      </div>
+      </div>
+    </container> -->
