@@ -15,7 +15,8 @@ body {
 }
 .nav-item{
 	color: white;
-
+  font-family: Merriweather, serif;
+  float: right;
 }
 
 a:hover{
@@ -28,6 +29,7 @@ a:hover{
 .navbar{
 	background-color: transparent !important;
 	border-color: rgba(0,0,0,0);
+  width: 100%;
 
 }
 
@@ -73,7 +75,7 @@ a:hover{
 }
 
 .fa:hover {
-    opacity: 0.7;
+    opacity: 0.99;
 }
 
 .fa-facebook {

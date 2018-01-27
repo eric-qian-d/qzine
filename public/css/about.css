@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Macondo');
+
+
+.nav-item{
+	color: black;
+	float: right;
+	background-color: white;
+		font-family: Merriweather, serif;
+}
+
+a:hover{
+	text-decoration: none !important;
+	color: black !important;
+	background-color: rgba(180,180,180,0.2);
+
+}
+
+.navbar{
+	background-color: white;
+	border-color: rgba(160,160,160,0.3);
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+
+}
+
+#about-body{
+	background-image: url('../images/about.jpg');
+
+	position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}

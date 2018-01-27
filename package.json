@@ -1,0 +1,26 @@
+{
+  "name": "emilyxie1999-2018",
+  "version": "1.0.0",
+  "description": "Qzine",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mit6148/emilyxie1999-2018.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mit6148/emilyxie1999-2018/issues"
+  },
+  "homepage": "https://github.com/mit6148/emilyxie1999-2018#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "mongoose": "^5.0.1",
+    "nodemon": "^1.14.11"
+  }
+}
