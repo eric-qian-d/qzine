@@ -13,7 +13,7 @@ function renderNavbar(user) {
 
   if (user._id) {
     navbarDiv.appendChild(newNavbarItem('Explore Recipes', '/explore.html'));    
-    navbarDiv.appendChild(newNavbarItem(user.name+',\'s Searches', '/u/profile?'+user._id));
+    navbarDiv.appendChild(newNavbarItem(user.name+'\'s Searches', '/u/profile?'+user._id));
     navbarDiv.appendChild(newNavbarItem('Logout', '/logout'));
   } else {
     navbarDiv.appendChild(newNavbarItem('Login', '/auth/google'));
