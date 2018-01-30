@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Explore Recipes</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/explore.css">
+  </head>
+
+    <body>
+
+    <nav class = "navbar navbar-expand-sm" style = 'padding: 0; position: fixed; width: 100%; display: block;' >
+      <div class = 'container-fluid' style = 'padding: 0';>
+        <div class = 'navbar-brand'><span style = 'color: #A52A2A; font-family: Merriweather, serif;'>Qzine</span></div>
+        <div class = 'navbar-nav' id = 'navbar-container'>
+          <a class = 'nav-item nav-link' href = '../' >Home</a>
+          <a class = 'nav-item nav-link' href = '../explore.html' >Explore Recipes</a>
+          <a class = 'nav-item nav-link' href = "../about.html" >About</a>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <h1>Your searches</h1>
+    <div id = 'history-conatiner'>
+
+
+    </div>
+
+    </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/navbar.js"></script>
+  <script src="/static/js/index.js"></script>
+  <script src="/static/js/history.js"></script>
+</html>

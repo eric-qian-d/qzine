@@ -1,0 +1,20 @@
+function newNavbarItem(text, url) {
+  itemLink = document.createElement('a');
+  itemLink.className = 'nav-item nav-link';
+  itemLink.innerHTML = text;
+  itemLink.href = url;
+
+  return itemLink
+}
+
+
+function renderNavbar(user) {
+  const navbarDiv = document.getElementById('navbar-container');
+
+  if (user._id) {
+    navbarDiv.appendChild(newNavbarItem(user.name, '/u/profile?'+user._id));
+    navbarDiv.appendChild(newNavbarItem('Logout', '/logout'));
+  } else {
+    navbarDiv.appendChild(newNavbarItem('Login', '/auth/google'));
+  }
+}

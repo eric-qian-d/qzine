@@ -10,25 +10,44 @@
 
     <body>
 
-    <nav class = "navbar navbar-expand-sm" style = 'padding: 0; position: fixed; width: 100%;' >
+    <nav class = "navbar navbar-expand-sm" style = 'padding: 0; position: fixed; width: 100%; display: block;' >
       <div class = 'container-fluid' style = 'padding: 0';>
         <div class = 'navbar-brand'><span style = 'color: #A52A2A; font-family: Merriweather, serif;'>Qzine</span></div>
-        <div class = 'navbar-nav'>
+        <div class = 'navbar-nav' id = 'navbar-container'>
           <a class = 'nav-item nav-link' href = './' >Home</a>
           <a class = 'nav-item nav-link' href = './explore.html' >Explore Recipes</a>
           <a class = 'nav-item nav-link' href = "./about.html" >About</a>
-          <a class = 'nav-item nav-link' href = "#/sign" >Sign In</a>
         </div>
       </div>
     </nav>
 
-      <div id="cuisine-images">
+<!--       <div id="cuisine-images">
         <img src="../images/chinese.jpg" width = "100" height = "150">
         <img src = "../images/indian.jpg" width = "285.71" height = "150">
         <img src = "../images/italian.jpg" width = "100" height = "150">
         <img src = "../images/greek.jpg" width = "224.82435" height = "150">
+      </div> -->
+    <br>
+    <br>
+    <div class = 'container-fluid' >
+      <div class = 'row' style = 'align-items: center;'>
+        <div class = 'col-8 mx-auto' style = 'text-align: center;'>
+          <input type="text" placeholder="Search Recipes" id = 'search-bar' style = ' min-width: 75%'>
+          <button type = 'button' id = 'search-button'>Search</button>
+        </div>
       </div>
+    </div>
+    <div class = 'container-fluid' id = 'recipes-container'>
+
+
+
+    </div>
 
 
     </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/navbar.js"></script>
+  <script src="/static/js/explore.js"></script>
+  <script src="/static/js/recipes.js"></script>
 </html>

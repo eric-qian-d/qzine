@@ -10,14 +10,13 @@
 		<nav class = "navbar navbar-expand-sm" style = 'padding: 0; position: fixed; width: 100%;' >
 			<div class = 'container-fluid' style = 'padding: 0';>
 				<div class = 'navbar-brand'><span style = 'color: #A52A2A; font-family: Merriweather, serif;'>Qzine</span></div>
-				<div class = 'navbar-nav'>
-          <a class = 'nav-item nav-link' href = './' >Home</a>
-          <a class = 'nav-item nav-link' href = './explore.html' >Explore Recipes</a>
-          <a class = 'nav-item nav-link' href = "./about.html" >About</a>
-          <a class = 'nav-item nav-link' href = "#/sign" >Sign In</a>
-				</div>
-			</div>
-		</nav>
+       		<div class = 'navbar-nav' id = 'navbar-container'>
+	          <a class = 'nav-item nav-link' href = './' >Home</a>
+	          <a class = 'nav-item nav-link' href = './explore.html' >Explore Recipes</a>
+	          <a class = 'nav-item nav-link' href = "./about.html" >About</a>
+	        </div>
+	      </div>
+	    </nav>
 
 		<container class = 'container-fluid' id = 'about-body'>
 			<div class = 'row' style = 'height: 100vh; 	background-color: rgba(160,160,160,0.5); z-index: 2; align-items: center;'>
@@ -32,3 +31,8 @@
 			</div>
 		</container>
 	</body>
+	<script src="/socket.io/socket.io.js"></script>
+  	<script src="/static/js/api.js"></script>
+  	<script src="/static/js/navbar.js"></script>
+  	<script src="/static/js/index.js"></script>
+ </html>

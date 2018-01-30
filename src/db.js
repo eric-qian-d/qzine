@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // setup mongoDB connection
-const mongoURL = "mongodb://ericqian:qwerty123@ds053305.mlab.com:53305/catbookdb";
+const mongoURL = process.env.MLAB_URL;
 const options = {
     useMongoClient: true
 };
