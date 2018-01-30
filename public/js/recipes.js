@@ -10,11 +10,18 @@ function recipeSearchHandler() {
 	searchbar.value = '';
 	console.log(text);
 	get('/api/searchrecipe', text);
-	post('/api/addrecipe', {text});
+	post('/api/addrecipe', {'content': text},
+		function(success){
+			console.log('success!')
+		 , 
+		function(err){
+			console.log(err)
+		}
+		})
 }
 
 function renderRecipes() {
-	
+
 }
 
 
