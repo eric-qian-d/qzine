@@ -9,7 +9,7 @@ function recipeSearchHandler() {
 	const text = searchbar.value;
 	searchbar.value = '';
 	console.log(text);
-	get('/api/searchrecipe', text);
+	renderRecipes(text);
 	post('/api/addrecipe', {'content': text},
 		function(success){
 			console.log('success!')
@@ -20,11 +20,38 @@ function recipeSearchHandler() {
 		})
 }
 
-function renderRecipes() {
+function renderRecipes(recipe) {
+  	const recipesDiv = document.getElementById('recipes-container');
+  	get("https://api.edamam.com/search", {
 
+		'q': recipe,
+    'app_id': 'ae43ca5d',
+    'app_key': '6410c40131f0bdaa4891f98f03afebef'
+
+  	}, 
+
+  	function(recipesArr) {
+    for (let i = 0; i < recipesArr.length; i++) {
+    	console.log('test');
+      const currentRecipe = recipesArr[i].recipe;
+      recipesDiv.prepend(recipeDOMObject(currentRecipe));
+	};
+		
+	},
+	function(err) {
+		console.log(err);
+	}
+	)
 }
 
 
+function recipeDOMObject(recipeJSON) {
+	recipeItem = document.createElement('div');
+	recipeItem.innerHTML = recipeJSON.label;
+	recipeItem.setAttribute('href', recipeJSON.uri);
+	return historyItem;
+
+}
 
 
 

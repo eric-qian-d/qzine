@@ -1,7 +1,6 @@
 function historyDOMObject(recipeJSON) {
 	historyItem = document.createElement('div');
 	historyItem.innerHTML = recipeJSON.query;
-	console.log('indomo');
 	return historyItem;
 }
 
@@ -11,9 +10,6 @@ function renderHistory(user) {
   	get('/api/searchhistory', {}, function(historyArr) {
     for (let i = 0; i < historyArr.length; i++) {
       const currentHistory = historyArr[i];
-      console.log(i);
-      console.log(historyArr.length);
-      console.log(currentHistory);
       historyDiv.prepend(historyDOMObject(currentHistory));
 	};
 		
