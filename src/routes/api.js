@@ -41,14 +41,14 @@ router.post('/addrecipe', connect.ensureLoggedIn(), function(req, res) {
 );
 
 
-router.get("https://api.edamam.com/search", function(req, res) {
+// router.get("https://api.edamam.com/search", function(req, res) {
 
-    console.log('searchworks');
-    res.send(req.hits);
-  }
+//     console.log('searchworks');
+//     res.send(req.hits);
+//   }
 
 
-  );
+//   );
 
 module.exports = router;
 

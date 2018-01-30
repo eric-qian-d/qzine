@@ -22,6 +22,7 @@ function recipeSearchHandler() {
 
 function renderRecipes(recipe) {
   	const recipesDiv = document.getElementById('recipes-container');
+  	recipesDiv.innerHTML = '';
   	get("https://api.edamam.com/search", {
 
 		'q': recipe,
@@ -31,9 +32,9 @@ function renderRecipes(recipe) {
   	}, 
 
   	function(recipesArr) {
-    for (let i = 0; i < recipesArr.length; i++) {
-    	console.log('test');
-      const currentRecipe = recipesArr[i].recipe;
+    for (let i = 0; i < recipesArr.hits.length; i++) {
+      const currentRecipe = recipesArr.hits[i].recipe;
+    	console.log(currentRecipe.uri);
       recipesDiv.prepend(recipeDOMObject(currentRecipe));
 	};
 		
@@ -46,10 +47,11 @@ function renderRecipes(recipe) {
 
 
 function recipeDOMObject(recipeJSON) {
-	recipeItem = document.createElement('div');
+	recipeItem = document.createElement('a');
 	recipeItem.innerHTML = recipeJSON.label;
-	recipeItem.setAttribute('href', recipeJSON.uri);
-	return historyItem;
+	recipeItem.setAttribute('href', recipeJSON.url);
+	recipeItem.setAttribute('class', 'recipe');
+	return recipeItem;
 
 }
 
